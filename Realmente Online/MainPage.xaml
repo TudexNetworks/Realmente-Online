@@ -7,11 +7,24 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Grid HorizontalAlignment="Center" Height="640" Margin="0,0,0,0" VerticalAlignment="Center" Width="360">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="57%"/>
-            <RowDefinition Height="10%"/>
-        </Grid.RowDefinitions>
-    </Grid>
+  <StackPanel Height="768" Margin="0,0,0,0" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" Width="1024">
+    <StackPanel.Background>
+      <ImageBrush ImageSource="/Assets/fondo.png" Stretch="UniformToFill"/>
+    </StackPanel.Background>
 
+    <StackPanel Margin="0,0,0,0" HorizontalAlignment="Center" Width="300" VerticalAlignment="Center" Height="500">
+      <Grid Height="410" Margin="0,0,0,0">
+        <Grid.Background>
+          <ImageBrush/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="35*"/>
+          <RowDefinition Height="8*"/>
+          <RowDefinition Height="8*"/>
+        </Grid.RowDefinitions>
+        <Button Content="Español" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="1" VerticalAlignment="Center" Click="es" Height="32" Width="72"/>
+        <Button Content="English" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="3" VerticalAlignment="Center" Click="es" Height="32" Width="72"/>
+      </Grid>
+    </StackPanel>
+  </StackPanel>
 </Page>
