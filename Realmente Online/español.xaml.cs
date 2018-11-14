@@ -20,16 +20,11 @@ namespace Realmente_Online
     /// <summary>
     /// Página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class español : Page
     {
-        public MainPage()
+        public español()
         {
             this.InitializeComponent();
-        }
-
-        private void es(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(español));
         }
     }
 }
