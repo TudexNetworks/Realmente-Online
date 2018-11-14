@@ -31,5 +31,7 @@ namespace Realmente_Online
         {
             Frame.Navigate(typeof(español));
         }
+
+     
     }
 }

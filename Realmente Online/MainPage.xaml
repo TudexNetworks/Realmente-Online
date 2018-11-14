@@ -7,8 +7,11 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Grid HorizontalAlignment="Center" Height="768" Margin="0,0,0,0" VerticalAlignment="Center" Width="1024">
-        <Button x:Name="es" Content="Button" HorizontalAlignment="Left" Margin="112,236,0,0" VerticalAlignment="Top" Click="es"/>
-
+    <Grid HorizontalAlignment="Center" Height="640" Margin="0,0,0,0" VerticalAlignment="Center" Width="360">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="57%"/>
+            <RowDefinition Height="10%"/>
+        </Grid.RowDefinitions>
     </Grid>
+
 </Page>
